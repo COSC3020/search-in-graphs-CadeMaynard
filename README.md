@@ -29,3 +29,7 @@ Implement and analyze breadth-first search.
 ## Runtime:
 
 The worst case for this algorithm, it being a search algorithm, is that the item we are searching for is not in the graph. The main iterator from the pseudocode is "While unvisited nodes remain." So in the process of searching for this item that is not in the graph, we will look at every single vertice exactly one time. (Technically we might check them more than once but it will go no further than checking if it has been visited, a constant-time operation.) So our runtime complexity for the worst-case scenario comes out to $\Theta(|V|)$ where $|V|$ is the number of vertices.
+
+### Sources:
+https://www.w3schools.com/jsref/jsref_array_flat.asp
+https://unitjs.com/guide/quickstart.html
