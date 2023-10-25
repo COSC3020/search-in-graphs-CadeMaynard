@@ -1,5 +1,6 @@
 const fs = require('fs');
 var test = require('unit.js');
+const jsc = require('jsverify');
 
 eval(fs.readFileSync('code.js')+'');
 
