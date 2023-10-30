@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12516223&assignment_repo_type=AssignmentRepo)
 # Search in Graphs
 
 Recall the pseudocode for Depth-First Search:
@@ -24,3 +25,11 @@ answer, including your reasoning, to this markdown file.
 ## Bonus
 
 Implement and analyze breadth-first search.
+
+## Runtime:
+
+The worst case for this algorithm, it being a search algorithm, is that the item we are searching for is not in the graph. The main iterator from the pseudocode is "While unvisited nodes remain," and while it is not explicitly in the code, in order to get to nodes, edges must be traversed. So in the process of searching for this item that is not in the graph, we will look at every single vertice and edge exactly one time. (Technically we might check them more than once but it will go no further than checking if it has been visited, a constant-time operation.) So our runtime complexity for the worst-case scenario comes out to $\Theta(|V| + |E|)$ where $|V|$ is the number of vertices and $|E|$ is the number of edges.
+
+### Sources:
+https://www.w3schools.com/jsref/jsref_array_flat.asp
+https://unitjs.com/guide/quickstart.html
